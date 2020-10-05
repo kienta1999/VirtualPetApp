@@ -14,7 +14,6 @@
 		AC1A72B3252BDAA9002705AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC1A72B2252BDAA9002705AA /* Assets.xcassets */; };
 		AC1A72B6252BDAA9002705AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1A72B4252BDAA9002705AA /* LaunchScreen.storyboard */; };
 		ACFE9B7B252BDF2600914075 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE9B7A252BDF2600914075 /* DisplayView.swift */; };
-		ACFE9B7D252BDF3B00914075 /* pet_images in Resources */ = {isa = PBXBuildFile; fileRef = ACFE9B7C252BDF3B00914075 /* pet_images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		AC1A72B5252BDAA9002705AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC1A72B7252BDAA9002705AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACFE9B7A252BDF2600914075 /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
-		ACFE9B7C252BDF3B00914075 /* pet_images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pet_images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +66,6 @@
 				ACFE9B7A252BDF2600914075 /* DisplayView.swift */,
 				AC1A72B4252BDAA9002705AA /* LaunchScreen.storyboard */,
 				AC1A72B7252BDAA9002705AA /* Info.plist */,
-				ACFE9B7C252BDF3B00914075 /* pet_images */,
 			);
 			path = "KienTa-Lab2";
 			sourceTree = "<group>";
@@ -131,7 +128,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACFE9B7D252BDF3B00914075 /* pet_images in Resources */,
 				AC1A72B6252BDAA9002705AA /* LaunchScreen.storyboard in Resources */,
 				AC1A72B3252BDAA9002705AA /* Assets.xcassets in Resources */,
 				AC1A72B1252BDAA7002705AA /* Main.storyboard in Resources */,
