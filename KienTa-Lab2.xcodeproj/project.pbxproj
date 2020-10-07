@@ -11,8 +11,8 @@
 		AC1A72AC252BDAA7002705AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1A72AB252BDAA7002705AA /* SceneDelegate.swift */; };
 		AC1A72AE252BDAA7002705AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1A72AD252BDAA7002705AA /* ViewController.swift */; };
 		AC1A72B1252BDAA7002705AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1A72AF252BDAA7002705AA /* Main.storyboard */; };
-		AC1A72B3252BDAA9002705AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC1A72B2252BDAA9002705AA /* Assets.xcassets */; };
 		AC1A72B6252BDAA9002705AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1A72B4252BDAA9002705AA /* LaunchScreen.storyboard */; };
+		AC71339B252DC79F00B3FB33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC1A72B2252BDAA9002705AA /* Assets.xcassets */; };
 		ACFE9B7B252BDF2600914075 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE9B7A252BDF2600914075 /* DisplayView.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,7 +22,7 @@
 		AC1A72AB252BDAA7002705AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AC1A72AD252BDAA7002705AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC1A72B0252BDAA7002705AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AC1A72B2252BDAA9002705AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC1A72B2252BDAA9002705AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "KienTa-Lab2/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		AC1A72B5252BDAA9002705AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC1A72B7252BDAA9002705AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACFE9B7A252BDF2600914075 /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC1A72B6252BDAA9002705AA /* LaunchScreen.storyboard in Resources */,
-				AC1A72B3252BDAA9002705AA /* Assets.xcassets in Resources */,
+				AC71339B252DC79F00B3FB33 /* Assets.xcassets in Resources */,
 				AC1A72B1252BDAA7002705AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
