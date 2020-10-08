@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,14 +12,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KienTa_Lab2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bli-la-7E3">
-                                <rect key="frame" x="0.0" y="44" width="375" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fish" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nwH-gU-TCB">
-                                        <rect key="frame" x="137.66666666666666" y="100" width="100" height="100"/>
+                                        <rect key="frame" x="110" y="25" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="K9j-gx-Yd6"/>
                                             <constraint firstAttribute="height" constant="100" id="YIN-l7-mjN"/>
@@ -30,15 +30,15 @@
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="nwH-gU-TCB" firstAttribute="centerY" secondItem="bli-la-7E3" secondAttribute="centerY" id="ECU-l6-OnY"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="Wc6-Kj-TUL"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="Wc6-Kj-TUL"/>
                                     <constraint firstItem="nwH-gU-TCB" firstAttribute="centerX" secondItem="bli-la-7E3" secondAttribute="centerX" id="ia9-gE-a7v"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="EE6-xk-rig">
-                                <rect key="frame" x="10" y="391" width="355" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="EE6-xk-rig" userLabel="Stack Play Feed">
+                                <rect key="frame" x="10" y="197" width="300" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZB5-g3-fao">
-                                        <rect key="frame" x="0.0" y="0.0" width="156" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="128.5" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Hpd-T4-ChE"/>
@@ -49,7 +49,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRo-7F-393">
-                                        <rect key="frame" x="199" y="0.0" width="156" height="30"/>
+                                        <rect key="frame" x="171.5" y="0.0" width="128.5" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="jxd-u6-XJJ"/>
@@ -64,16 +64,66 @@
                                     <constraint firstItem="BRo-7F-393" firstAttribute="width" secondItem="ZB5-g3-fao" secondAttribute="width" id="pxc-XF-Zd8"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="HGj-zu-1c4" userLabel="Stack Animal">
+                                <rect key="frame" x="5" y="533" width="310" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R61-H1-aV2">
+                                        <rect key="frame" x="0.0" y="0.0" width="28.5" height="30"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Dog">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fj0-cq-9Nl">
+                                        <rect key="frame" x="66.5" y="0.0" width="28.5" height="30"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Cat">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wm8-r7-H0r">
+                                        <rect key="frame" x="133" y="0.0" width="29" height="30"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Bird">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHN-wB-4r5">
+                                        <rect key="frame" x="200" y="0.0" width="43.5" height="30"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Bunny">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6by-0P-7Mm">
+                                        <rect key="frame" x="281.5" y="0.0" width="28.5" height="30"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Fish">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fj0-cq-9Nl" firstAttribute="width" secondItem="R61-H1-aV2" secondAttribute="width" id="C1j-wr-FuK"/>
+                                    <constraint firstItem="YHN-wB-4r5" firstAttribute="width" secondItem="R61-H1-aV2" secondAttribute="width" constant="15" id="aPj-Ld-hZs"/>
+                                    <constraint firstAttribute="height" constant="30" id="k4Y-bT-io2"/>
+                                    <constraint firstItem="wm8-r7-H0r" firstAttribute="width" secondItem="R61-H1-aV2" secondAttribute="width" id="rdQ-SP-jcH"/>
+                                    <constraint firstItem="6by-0P-7Mm" firstAttribute="width" secondItem="R61-H1-aV2" secondAttribute="width" id="ter-2I-XvD"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="HGj-zu-1c4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="5w1-b9-CWV"/>
                             <constraint firstItem="EE6-xk-rig" firstAttribute="top" secondItem="bli-la-7E3" secondAttribute="bottom" priority="500" constant="47" id="7Ce-kh-SHS"/>
                             <constraint firstItem="bli-la-7E3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="T8t-jJ-QUy"/>
                             <constraint firstItem="bli-la-7E3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VO8-QN-aME"/>
                             <constraint firstItem="bli-la-7E3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WKW-4z-HQ2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EE6-xk-rig" secondAttribute="trailing" constant="10" id="XMM-eP-TfA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bli-la-7E3" secondAttribute="bottom" priority="500" constant="434" id="ZUn-nG-goI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EE6-xk-rig" secondAttribute="bottom" constant="100" id="iBg-Eg-xd8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EE6-xk-rig" secondAttribute="bottom" constant="120" id="iBg-Eg-xd8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HGj-zu-1c4" secondAttribute="bottom" constant="5" id="jSG-Ft-q6h"/>
+                            <constraint firstAttribute="trailing" secondItem="HGj-zu-1c4" secondAttribute="trailing" constant="5" id="lTa-0p-BHz"/>
                             <constraint firstItem="EE6-xk-rig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="s4q-Kf-mUd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -81,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="77.58620689655173"/>
+            <point key="canvasLocation" x="131.25" y="77.5"/>
         </scene>
     </scenes>
     <resources>
