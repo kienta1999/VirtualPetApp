@@ -11,15 +11,13 @@ import UIKit
 class Animal{
     var happy:Int
     var food:Int
-    var color:String
     
-    init(_ happy:Int, _ food: Int, _ color:String) {
+    init(_ happy:Int, _ food: Int) {
         self.happy = happy
         self.food = food
-        self.color = color
     }
-    convenience init(_ color:String){
-        self.init(0, 0, color)
+    convenience init(){
+        self.init(0, 0)
     }
     func play(){
         if(food >= 1){

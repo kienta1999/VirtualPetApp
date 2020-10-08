@@ -9,11 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var a = Animal(color: "green");
+    var a:Animal?
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("View loaded")
+        
     }
 
 
