@@ -12,7 +12,8 @@ class ViewController: UIViewController {
     var currentAnimal:Animal?
     var currentColor:UIColor?
     var arrayAnimal:[Animal] = []
-    var color:[UIColor] = [.red, .systemPink, .green, .yellow, .orange]
+    var color:[UIColor] = [.red, .blue, .green, .yellow, .orange]
+    var images:[UIImage] = [UIImage(named: "dog")!, UIImage(named: "cat")!, UIImage(named: "bird")!, UIImage(named: "bunny")!, UIImage(named: "fish")!]
     let MAX_HAPPY = 20
     let MAX_FOOD = 20
     
@@ -32,6 +33,7 @@ class ViewController: UIViewController {
         }
         currentAnimal = arrayAnimal[0]
         currentColor = color[0]
+        animalImageOutlet.image = images[0]
         happyBarOutlet.backgroundColor = .gray
         foodBarOutlet.backgroundColor = .gray
         updateColor(currentColor)
@@ -43,6 +45,7 @@ class ViewController: UIViewController {
         let index = sender.tag
         currentAnimal = arrayAnimal[index]
         currentColor = color[index]
+        animalImageOutlet.image = images[index]
         updateColor(currentColor)
         updateAnimal()
         
@@ -76,8 +79,6 @@ class ViewController: UIViewController {
     }
     func updateColor(_ currentColor: UIColor?){
         ImageViewOutlet.backgroundColor = currentColor!
-        
-        
         happyBarOutlet.color = currentColor!
         foodBarOutlet.color = currentColor!
     }
