@@ -13,6 +13,7 @@
 		AC1A72B1252BDAA7002705AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1A72AF252BDAA7002705AA /* Main.storyboard */; };
 		AC1A72B6252BDAA9002705AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1A72B4252BDAA9002705AA /* LaunchScreen.storyboard */; };
 		AC71339B252DC79F00B3FB33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC1A72B2252BDAA9002705AA /* Assets.xcassets */; };
+		ACFE29C2252EC3EA00E6B5F8 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE29C1252EC3EA00E6B5F8 /* Animal.swift */; };
 		ACFE9B7B252BDF2600914075 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE9B7A252BDF2600914075 /* DisplayView.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		AC1A72B2252BDAA9002705AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "KienTa-Lab2/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		AC1A72B5252BDAA9002705AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC1A72B7252BDAA9002705AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACFE29C1252EC3EA00E6B5F8 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		ACFE9B7A252BDF2600914075 /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				ACFE9B7A252BDF2600914075 /* DisplayView.swift */,
 				AC1A72B4252BDAA9002705AA /* LaunchScreen.storyboard */,
 				AC1A72B7252BDAA9002705AA /* Info.plist */,
+				ACFE29C1252EC3EA00E6B5F8 /* Animal.swift */,
 			);
 			path = "KienTa-Lab2";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				ACFE9B7B252BDF2600914075 /* DisplayView.swift in Sources */,
 				AC1A72AA252BDAA7002705AA /* AppDelegate.swift in Sources */,
 				AC1A72AC252BDAA7002705AA /* SceneDelegate.swift in Sources */,
+				ACFE29C2252EC3EA00E6B5F8 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
