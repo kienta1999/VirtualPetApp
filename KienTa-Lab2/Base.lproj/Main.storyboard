@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,14 +12,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KienTa_Lab2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bli-la-7E3">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bli-la-7E3" userLabel="Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="334"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fish" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nwH-gU-TCB">
-                                        <rect key="frame" x="110" y="25" width="100" height="100"/>
+                                        <rect key="frame" x="462" y="117" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="K9j-gx-Yd6"/>
                                             <constraint firstAttribute="height" constant="100" id="YIN-l7-mjN"/>
@@ -35,10 +35,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="EE6-xk-rig" userLabel="Stack Play Feed">
-                                <rect key="frame" x="10" y="197" width="300" height="30"/>
+                                <rect key="frame" x="10" y="381" width="1004" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZB5-g3-fao">
-                                        <rect key="frame" x="0.0" y="0.0" width="128.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="480.5" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Hpd-T4-ChE"/>
@@ -49,7 +49,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRo-7F-393">
-                                        <rect key="frame" x="171.5" y="0.0" width="128.5" height="30"/>
+                                        <rect key="frame" x="523.5" y="0.0" width="480.5" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="jxd-u6-XJJ"/>
@@ -65,38 +65,38 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="HGj-zu-1c4" userLabel="Stack Animal">
-                                <rect key="frame" x="5" y="533" width="310" height="30"/>
+                                <rect key="frame" x="5" y="733" width="1014" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R61-H1-aV2">
-                                        <rect key="frame" x="0.0" y="0.0" width="28.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Dog">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fj0-cq-9Nl">
-                                        <rect key="frame" x="66.5" y="0.0" width="28.5" height="30"/>
+                                        <rect key="frame" x="207.5" y="0.0" width="169.5" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Cat">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wm8-r7-H0r">
-                                        <rect key="frame" x="133" y="0.0" width="29" height="30"/>
+                                        <rect key="frame" x="415" y="0.0" width="169" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Bird">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHN-wB-4r5">
-                                        <rect key="frame" x="200" y="0.0" width="43.5" height="30"/>
+                                        <rect key="frame" x="622" y="0.0" width="184.5" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Bunny">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6by-0P-7Mm">
-                                        <rect key="frame" x="281.5" y="0.0" width="28.5" height="30"/>
+                                        <rect key="frame" x="844.5" y="0.0" width="169.5" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Fish">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -111,9 +111,29 @@
                                     <constraint firstItem="6by-0P-7Mm" firstAttribute="width" secondItem="R61-H1-aV2" secondAttribute="width" id="ter-2I-XvD"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gaq-Od-Z15" userLabel="Stack Status">
+                                <rect key="frame" x="5" y="431" width="1014" height="282"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMZ-B9-0Il">
+                                        <rect key="frame" x="0.0" y="0.0" width="1014" height="133"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCu-jw-Jgr">
+                                        <rect key="frame" x="0.0" y="149" width="1014" height="133"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hMZ-B9-0Il" firstAttribute="top" secondItem="gaq-Od-Z15" secondAttribute="top" id="09T-up-gco"/>
+                                    <constraint firstItem="RCu-jw-Jgr" firstAttribute="height" secondItem="hMZ-B9-0Il" secondAttribute="height" id="E8V-BL-keD"/>
+                                    <constraint firstItem="RCu-jw-Jgr" firstAttribute="width" secondItem="hMZ-B9-0Il" secondAttribute="width" id="HzY-i0-ktx"/>
+                                </constraints>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gaq-Od-Z15" secondAttribute="trailing" constant="5" id="4mD-ZN-gGr"/>
                             <constraint firstItem="HGj-zu-1c4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="5w1-b9-CWV"/>
                             <constraint firstItem="EE6-xk-rig" firstAttribute="top" secondItem="bli-la-7E3" secondAttribute="bottom" priority="500" constant="47" id="7Ce-kh-SHS"/>
                             <constraint firstItem="bli-la-7E3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="T8t-jJ-QUy"/>
@@ -121,17 +141,21 @@
                             <constraint firstItem="bli-la-7E3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WKW-4z-HQ2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EE6-xk-rig" secondAttribute="trailing" constant="10" id="XMM-eP-TfA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bli-la-7E3" secondAttribute="bottom" priority="500" constant="434" id="ZUn-nG-goI"/>
+                            <constraint firstItem="gaq-Od-Z15" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="dHc-65-Se4" userLabel="Stack Status.leading = Safe Area.leading"/>
+                            <constraint firstItem="EE6-xk-rig" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bli-la-7E3" secondAttribute="bottom" constant="10" id="ds6-QV-aod"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EE6-xk-rig" secondAttribute="bottom" constant="120" id="iBg-Eg-xd8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HGj-zu-1c4" secondAttribute="bottom" constant="5" id="jSG-Ft-q6h"/>
                             <constraint firstAttribute="trailing" secondItem="HGj-zu-1c4" secondAttribute="trailing" constant="5" id="lTa-0p-BHz"/>
+                            <constraint firstItem="HGj-zu-1c4" firstAttribute="top" secondItem="gaq-Od-Z15" secondAttribute="bottom" constant="20" id="qvq-wQ-3VX"/>
                             <constraint firstItem="EE6-xk-rig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="s4q-Kf-mUd"/>
+                            <constraint firstItem="gaq-Od-Z15" firstAttribute="top" secondItem="EE6-xk-rig" secondAttribute="bottom" constant="20" id="zz7-gA-YpF" userLabel="Stack Status.top = Stack Play Feed.bottom + 18"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.25" y="77.5"/>
+            <point key="canvasLocation" x="131.25" y="76.25"/>
         </scene>
     </scenes>
     <resources>
