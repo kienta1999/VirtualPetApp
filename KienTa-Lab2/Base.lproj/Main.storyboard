@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,14 +12,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KienTa_Lab2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bli-la-7E3">
-                                <rect key="frame" x="0.0" y="0.0" width="834" height="740"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="300"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fish" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nwH-gU-TCB">
-                                        <rect key="frame" x="367" y="320" width="100" height="100"/>
+                                        <rect key="frame" x="137.66666666666666" y="100" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="K9j-gx-Yd6"/>
                                             <constraint firstAttribute="height" constant="100" id="YIN-l7-mjN"/>
@@ -35,10 +35,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="EE6-xk-rig">
-                                <rect key="frame" x="10" y="787" width="814" height="30"/>
+                                <rect key="frame" x="10" y="391" width="355" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZB5-g3-fao">
-                                        <rect key="frame" x="0.0" y="0.0" width="385.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="156" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Hpd-T4-ChE"/>
@@ -49,7 +49,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRo-7F-393">
-                                        <rect key="frame" x="428.5" y="0.0" width="385.5" height="30"/>
+                                        <rect key="frame" x="199" y="0.0" width="156" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="jxd-u6-XJJ"/>
@@ -67,12 +67,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="EE6-xk-rig" firstAttribute="top" secondItem="bli-la-7E3" secondAttribute="bottom" constant="47" id="7Ce-kh-SHS"/>
+                            <constraint firstItem="EE6-xk-rig" firstAttribute="top" secondItem="bli-la-7E3" secondAttribute="bottom" priority="500" constant="47" id="7Ce-kh-SHS"/>
                             <constraint firstItem="bli-la-7E3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="T8t-jJ-QUy"/>
                             <constraint firstItem="bli-la-7E3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VO8-QN-aME"/>
                             <constraint firstItem="bli-la-7E3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WKW-4z-HQ2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EE6-xk-rig" secondAttribute="trailing" constant="10" id="XMM-eP-TfA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bli-la-7E3" secondAttribute="bottom" priority="500" constant="434" id="ZUn-nG-goI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EE6-xk-rig" secondAttribute="bottom" constant="100" id="iBg-Eg-xd8"/>
                             <constraint firstItem="EE6-xk-rig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="s4q-Kf-mUd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
