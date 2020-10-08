@@ -9,16 +9,78 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var a:Animal?
+    var currentAnimal:Animal?
+    var currentColor:UIColor?
+    var arrayAnimal:[Animal] = []
+    var color:[UIColor] = [.red, .systemPink, .green, .yellow, .orange]
+    let MAX_HAPPY = 20
+    let MAX_FOOD = 20
     
     
+    @IBOutlet weak var ImageViewOutlet: UIView!
+    @IBOutlet weak var animalImageOutlet: UIImageView!
+    @IBOutlet weak var happyScoreOutlet: UILabel!
+    @IBOutlet weak var happyBarOutlet: DisplayView!
+    @IBOutlet weak var foodScoreOutlet: UILabel!
+    @IBOutlet weak var foodBarOutlet: DisplayView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        for _ in 0...4{
+            arrayAnimal.append(Animal())
+        }
+        currentAnimal = arrayAnimal[0]
+        currentColor = color[0]
+        happyBarOutlet.backgroundColor = .gray
+        foodBarOutlet.backgroundColor = .gray
+        updateColor(currentColor)
         
     }
-
+    
+    
+    @IBAction func animalChanged(_ sender: UIButton) {
+        let index = sender.tag
+        currentAnimal = arrayAnimal[index]
+        currentColor = color[index]
+        updateColor(currentColor)
+        updateAnimal()
+        
+    }
+    
+    @IBAction func animalPlay(_ sender: UIButton) {
+        currentAnimal!.play()
+        updateAnimal()
+    }
+    
+    @IBAction func animalFeed(_ sender: Any) {
+        currentAnimal!.feed()
+        updateAnimal()
+    }
+    
+    func updateAnimal(){
+        var happyScore = currentAnimal!.happy
+        happyScoreOutlet.text = String("\(happyScore)")
+        if(happyScore > MAX_HAPPY){
+            happyScore = MAX_HAPPY
+        }
+        happyBarOutlet.animateValue(to: CGFloat(Float(happyScore) / Float(MAX_HAPPY)))
+        
+        var foodScore = currentAnimal!.food
+        foodScoreOutlet.text = String("\(foodScore)")
+        if(foodScore > MAX_FOOD){
+            foodScore = MAX_FOOD
+        }
+        foodBarOutlet.animateValue(to: CGFloat(Float(foodScore) / Float(MAX_HAPPY)))
+        
+    }
+    func updateColor(_ currentColor: UIColor?){
+        ImageViewOutlet.backgroundColor = currentColor!
+        
+        
+        happyBarOutlet.color = currentColor!
+        foodBarOutlet.color = currentColor!
+    }
 
 }
 
