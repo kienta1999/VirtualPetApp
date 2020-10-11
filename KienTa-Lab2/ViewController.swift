@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
+
+var player: AVAudioPlayer?
 
 class ViewController: UIViewController {
     var currentAnimal:Animal?
@@ -52,6 +55,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func animalPlay(_ sender: UIButton) {
+        if(currentAnimal!.food > 0){
+            playSound("sound/happy")
+        }
         currentAnimal!.play()
         updateAnimal()
     }
@@ -59,6 +65,8 @@ class ViewController: UIViewController {
     @IBAction func animalFeed(_ sender: Any) {
         currentAnimal!.feed()
         updateAnimal()
+        playSound("sound/eat")
+        
     }
     
     func updateAnimal(){
@@ -81,6 +89,27 @@ class ViewController: UIViewController {
         ImageViewOutlet.backgroundColor = currentColor!
         happyBarOutlet.color = currentColor!
         foodBarOutlet.color = currentColor!
+    }
+    func playSound(_ resource: String) {
+        guard let url = Bundle.main.url(forResource: resource, withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            /* iOS 10 and earlier require the following line:
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
 
 }
