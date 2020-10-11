@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     var arrayAnimal:[Animal] = []
     var color:[UIColor] = [.red, .blue, .green, .yellow, .orange]
     var images:[UIImage] = [UIImage(named: "dog")!, UIImage(named: "cat")!, UIImage(named: "bird")!, UIImage(named: "bunny")!, UIImage(named: "fish")!]
-    let MAX_HAPPY = 20
-    let MAX_FOOD = 20
+    let MAX_HAPPY = 10
+    let MAX_FOOD = 10
     
     
     @IBOutlet weak var ImageViewOutlet: UIView!

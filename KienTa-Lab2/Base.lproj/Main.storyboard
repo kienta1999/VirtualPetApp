@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,14 +12,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KienTa_Lab2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bli-la-7E3" userLabel="Image View">
-                                <rect key="frame" x="0.0" y="44" width="375" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="912"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fish" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nwH-gU-TCB">
-                                        <rect key="frame" x="137.66666666666666" y="100" width="100" height="100"/>
+                                        <rect key="frame" x="462" y="406" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="K9j-gx-Yd6"/>
                                             <constraint firstAttribute="height" constant="100" id="YIN-l7-mjN"/>
@@ -35,10 +35,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="EE6-xk-rig" userLabel="Stack Play Feed">
-                                <rect key="frame" x="10" y="391" width="355" height="30"/>
+                                <rect key="frame" x="10" y="959" width="1004" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZB5-g3-fao">
-                                        <rect key="frame" x="0.0" y="0.0" width="156" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="480.5" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Hpd-T4-ChE"/>
@@ -52,7 +52,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRo-7F-393">
-                                        <rect key="frame" x="199" y="0.0" width="156" height="30"/>
+                                        <rect key="frame" x="523.5" y="0.0" width="480.5" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="jxd-u6-XJJ"/>
@@ -71,10 +71,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="HGj-zu-1c4" userLabel="Stack Animal">
-                                <rect key="frame" x="5" y="743" width="365" height="30"/>
+                                <rect key="frame" x="5" y="1311" width="1014" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R61-H1-aV2">
-                                        <rect key="frame" x="0.0" y="0.0" width="39.666666666666664" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Dog">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -84,7 +84,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fj0-cq-9Nl">
-                                        <rect key="frame" x="77.666666666666671" y="0.0" width="39.666666666666671" height="30"/>
+                                        <rect key="frame" x="207.5" y="0.0" width="169.5" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Cat">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -94,7 +94,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wm8-r7-H0r">
-                                        <rect key="frame" x="155.33333333333334" y="0.0" width="39.333333333333343" height="30"/>
+                                        <rect key="frame" x="415" y="0.0" width="169" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Bird">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -104,7 +104,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHN-wB-4r5">
-                                        <rect key="frame" x="232.66666666666666" y="0.0" width="54.666666666666657" height="30"/>
+                                        <rect key="frame" x="622" y="0.0" width="184.5" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Bunny">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -114,7 +114,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6by-0P-7Mm">
-                                        <rect key="frame" x="325.33333333333331" y="0.0" width="39.666666666666686" height="30"/>
+                                        <rect key="frame" x="844.5" y="0.0" width="169.5" height="30"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Fish">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -133,13 +133,13 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gaq-Od-Z15" userLabel="Stack Status">
-                                <rect key="frame" x="5" y="441" width="365" height="282"/>
+                                <rect key="frame" x="5" y="1009" width="1014" height="282"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMZ-B9-0Il" userLabel="Happy View">
-                                        <rect key="frame" x="0.0" y="0.0" width="365" height="133"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1014" height="133"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvE-9I-4GT" userLabel="Happy Level View" customClass="DisplayView" customModule="KienTa_Lab2" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="36" width="365" height="97"/>
+                                                <rect key="frame" x="0.0" y="36" width="1014" height="97"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happiness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERy-Ng-5uC" userLabel="Happiness Level Label">
@@ -152,7 +152,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzY-I9-pWc" userLabel="Happy Score Label">
-                                                <rect key="frame" x="330" y="0.0" width="35" height="26"/>
+                                                <rect key="frame" x="979" y="0.0" width="35" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="27" id="gcK-6R-oCi"/>
                                                 </constraints>
@@ -165,6 +165,7 @@
                                         <constraints>
                                             <constraint firstItem="kvE-9I-4GT" firstAttribute="top" secondItem="ERy-Ng-5uC" secondAttribute="bottom" constant="10" id="25s-Y2-aii"/>
                                             <constraint firstItem="ERy-Ng-5uC" firstAttribute="leading" secondItem="hMZ-B9-0Il" secondAttribute="leading" id="6pz-wJ-W8w"/>
+                                            <constraint firstItem="OzY-I9-pWc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ERy-Ng-5uC" secondAttribute="trailing" constant="8" symbolic="YES" id="DB2-Tt-37V"/>
                                             <constraint firstItem="ERy-Ng-5uC" firstAttribute="height" secondItem="OzY-I9-pWc" secondAttribute="height" id="EfS-H9-SQL"/>
                                             <constraint firstAttribute="bottom" secondItem="kvE-9I-4GT" secondAttribute="bottom" id="HNB-Lm-I9r"/>
                                             <constraint firstAttribute="bottom" secondItem="kvE-9I-4GT" secondAttribute="bottom" id="Hau-Lp-kq6"/>
@@ -176,7 +177,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCu-jw-Jgr" userLabel="Food View">
-                                        <rect key="frame" x="0.0" y="149" width="365" height="133"/>
+                                        <rect key="frame" x="0.0" y="149" width="1014" height="133"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVc-Nb-yCM" userLabel="Food Level Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="83" height="26"/>
@@ -185,7 +186,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6c6-ua-E00" userLabel="Food Score Label">
-                                                <rect key="frame" x="330" y="0.0" width="35" height="26"/>
+                                                <rect key="frame" x="979" y="0.0" width="35" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="8FD-Aa-Wtu"/>
                                                 </constraints>
@@ -194,7 +195,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whf-2D-Thv" customClass="DisplayView" customModule="KienTa_Lab2" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="36" width="365" height="97"/>
+                                                <rect key="frame" x="0.0" y="36" width="1014" height="97"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                         </subviews>
@@ -203,6 +204,7 @@
                                             <constraint firstItem="whf-2D-Thv" firstAttribute="leading" secondItem="RCu-jw-Jgr" secondAttribute="leading" id="0dR-W7-rnN"/>
                                             <constraint firstItem="JVc-Nb-yCM" firstAttribute="top" secondItem="RCu-jw-Jgr" secondAttribute="top" id="2vW-di-Ags"/>
                                             <constraint firstItem="whf-2D-Thv" firstAttribute="leading" secondItem="RCu-jw-Jgr" secondAttribute="leading" id="2zk-SS-pmV"/>
+                                            <constraint firstItem="6c6-ua-E00" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JVc-Nb-yCM" secondAttribute="trailing" constant="8" symbolic="YES" id="A51-m6-ytM"/>
                                             <constraint firstAttribute="trailing" secondItem="whf-2D-Thv" secondAttribute="trailing" id="Lxy-Em-ccV"/>
                                             <constraint firstAttribute="bottom" secondItem="whf-2D-Thv" secondAttribute="bottom" id="cuR-qN-Naa"/>
                                             <constraint firstAttribute="bottom" secondItem="whf-2D-Thv" secondAttribute="bottom" id="dlN-oY-Cmd"/>
