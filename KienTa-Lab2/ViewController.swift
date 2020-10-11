@@ -14,6 +14,8 @@ var player: AVAudioPlayer?
 class ViewController: UIViewController {
     var currentAnimal:Animal?
     var currentColor:UIColor?
+    
+    
     var arrayAnimal:[Animal] = []
     var color:[UIColor] = [.red, .blue, .green, .yellow, .orange]
     var images:[UIImage] = [UIImage(named: "dog")!, UIImage(named: "cat")!, UIImage(named: "bird")!, UIImage(named: "bunny")!, UIImage(named: "fish")!]
@@ -27,6 +29,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var happyBarOutlet: DisplayView!
     @IBOutlet weak var foodScoreOutlet: UILabel!
     @IBOutlet weak var foodBarOutlet: DisplayView!
+    
+    @IBOutlet weak var icon: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +66,7 @@ class ViewController: UIViewController {
         updateAnimal()
     }
     
-    @IBAction func animalFeed(_ sender: Any) {
+    @IBAction func animalFeed(_ sender: UIButton) {
         currentAnimal!.feed()
         updateAnimal()
         playSound("sound/eat")
@@ -75,6 +79,7 @@ class ViewController: UIViewController {
         if(happyScore > MAX_HAPPY){
             happyScore = MAX_HAPPY
         }
+        
         happyBarOutlet.animateValue(to: CGFloat(Float(happyScore) / Float(MAX_HAPPY)))
         
         var foodScore = currentAnimal!.food
@@ -83,6 +88,17 @@ class ViewController: UIViewController {
             foodScore = MAX_FOOD
         }
         foodBarOutlet.animateValue(to: CGFloat(Float(foodScore) / Float(MAX_HAPPY)))
+        
+        //Adjust icon img
+        if(foodScore == 0){
+            icon.image = UIImage(named: "sad")
+        }
+        else if(happyScore >= MAX_HAPPY){
+            icon.image = UIImage(named: "heart")
+        }
+        else{
+            icon.image = nil
+        }
         
     }
     func updateColor(_ currentColor: UIColor?){
